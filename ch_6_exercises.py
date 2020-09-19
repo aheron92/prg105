@@ -74,8 +74,6 @@ print("=" * 10, "Section 6.4 exceptions", "=" * 10)
 
 def main():
     try:
-        input("Please enter choose a file. ")
-
         hero_file = open('superheros.txt', 'r')
         hero_file.close()
 
