@@ -216,7 +216,7 @@ class ChangeGUI:
         self.info.pack(side='left')
         self.result_label.pack(side='left')
 
-        self.Change_button = tkinter.Button(self.bottom_frame, text='Change', command=self.change_person)
+        self.change_button = tkinter.Button(self.bottom_frame, text='Change', command=self.change_person)
         self.back_button = tkinter.Button(self.bottom_frame, text='Main Menu', command=self.back)
 
         self.change_button.pack(side='left')
