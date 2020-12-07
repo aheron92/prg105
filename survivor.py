@@ -26,7 +26,7 @@ class Survivor(Frame):
         self.pack()
 
         self.QUIT = Button(self)
-        self.start = Button(self)
+        self.START = Button(self)
 
         self.top_frame.pack()
         self.bottom_frame.pack()
@@ -37,17 +37,17 @@ class Survivor(Frame):
         self.QUIT = tkinter.Button(self.bottom_frame, text='Quit', command=self.quit)
         self.QUIT["fg"] = "red"
 
-        self.start = tkinter.Button(self.bottom_frame, text='Start', command=self.start)
-        self.start["fg"] = "blue"
+        self.START = tkinter.Button(self.bottom_frame, text='Start', command=self.start)
+        self.START["fg"] = "blue"
 
         self.QUIT.pack(side="left")
-        self.start.pack(side="left")
+        self.START.pack(side="left")
 
     def start(self):
         if self.radio_var.get == 1:
             _ = SceneOne(self.master)
         else:
-            text.insert(INSERT, "Please select 'Play Game' to continue.  Otherwise, press 'Quit'")
+            text.insert(INSERT, "\nPlease select 'Play Game' to continue.  Otherwise, press 'Quit'")
 
 
 class SceneOne(Frame):
